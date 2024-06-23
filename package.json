@@ -1,0 +1,15 @@
+{
+  "name": "@cowk8s/cli",
+  "version": "0.0.1",
+  "main": "npm/index.js",
+  "bin": {
+    "cowk8s": "bin/cowk8s"
+  },
+  "files": [
+    "npm/index.js",
+    "bin"
+  ],
+  "dependencies": {
+    "binwrap": "^0.2.3"
+  }
+}

@@ -1,0 +1,14 @@
+.bin/
+dist/
+pkged.go
+*.crt
+*.key
+docs/
+node_modules
+ory
+bin/
+unpacked_bin/
+.idea
+cypress/screenshots
+cypress/videos
+cli

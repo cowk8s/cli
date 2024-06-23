@@ -1,0 +1,13 @@
+FROM alpine:3.19
+
+RUN addgroup -S cowk8s; \
+    adduser -S cowk8s -G cowk8s -D  -h /home/cowk8s -s /bin/nologin; \
+    chown -R cowk8s:cowk8s /home/cowk8s
+
+RUN apk add -U --no-cache ca-certificates
+
+COPY cowk8s /usr/bin/cowk8s
+
+USER cowk8s
+
+ENTRYPOINT ["cowk8s"]
